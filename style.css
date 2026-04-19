@@ -1,3 +1,10 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 div {
     border: 1px solid #d1d5db;
     border-radius: 12px;
@@ -8,6 +15,10 @@ div {
     background-color: #ffffff;
     max-width: 350px;
     text-align: center;
+}
+
+div:hover {
+    transform: scale(1.02) rotate(1deg);
 }
 
 div h3 {
@@ -62,4 +73,11 @@ div a {
 
 div a:hover {
     background-color: #2a2f3d;
+}
+
+@media (max-width: 600px) {
+    div {
+        width: 90%;
+        max-width: 90%;
+    }
 }
